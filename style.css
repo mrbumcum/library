@@ -50,3 +50,44 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #e9e7e7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .login {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #bab5b5;
+    color: black;
+  }
+
+  .login:hover {
+    background-color: #99D6FF;
+    cursor: pointer;  
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  
