@@ -105,5 +105,24 @@
     width: 10rem;
     height: 2.5rem;
     opacity: 0.8;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .footer img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    width: 20px;
+    height: 20px;
   }
