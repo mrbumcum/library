@@ -147,8 +147,28 @@
     padding: 2rem;
     border-radius: 0.5rem;
     margin: 15% auto;
+    height: 80%;
     width: 80%;
-    max-width: 500px;
-    
-    
+    max-height: 300px;
+    max-width: 500px; 
+  }
+
+  #bookForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: .2rem;
+  }
+
+  #bookForm input {
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 100%;
+    }
+
+  button[type=submit] {
+    margin: 5% auto
   }
