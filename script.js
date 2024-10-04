@@ -5,6 +5,21 @@ const bookGrid = document.querySelector("#bookGrid");
 
 let bookList = []
 
+function Book(name, author, pages, read) {
+    this.name = name;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+}
+
+function addBookToLibrary(book) {
+    bookList.push(book);
+    displayBook();
+}
+
+function displayBook(){
+
+}
 
 addBookBtn.addEventListener("click", () => {
     modal.style.display = "block";
@@ -16,4 +31,18 @@ modal.addEventListener("click", (event) => {
         modal.style.display = "none"
         addBookBtn.style.display = "block"
     }
+})
+
+addBookForm.addEventListener("submit", (event) => {
+    modal.style.display = "none"
+    addBookBtn.style.display = "block"
+    event.preventDefault();
+
+    const name = document.querySelector("#bookName").value;
+    const author = document.querySelector("#author").value;
+    const pages = document.querySelector("#pages").value;
+    const read = document.querySelector("#number").value;
+    
+    const book = new Book(name, pages, author, read);
+    addBookToLibrary(book);
 })
