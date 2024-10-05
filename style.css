@@ -174,20 +174,10 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   }
 
-
-
 button[type=submit] {
   margin: 5% auto;
 }
 
-
-#read input {
-  display: inline-block;
-  vertical-align: middle;
-  width: 15px;
-  height: 15px;
-  margin: 0.1rem;
-}
 
 #bookGrid {
 display: grid;
@@ -238,3 +228,20 @@ background-color: #ff9999;
 border-radius: 10px;
 padding: 0.4rem;
 }
+
+#readContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#read label{
+  display: block;
+  flex-grow: 1; 
+  margin-right: 1rem; 
+  width: 100%;
+  text-align: left;
+}
+

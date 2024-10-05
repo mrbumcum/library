@@ -46,6 +46,11 @@ function displayBook() {
         read.classList.add("read");
         book.appendChild(read);
 
+        read.addEventListener("click", () => {
+            bookList[i].read = !bookList[i].read;
+            displayBook();
+        })
+
         bookGrid.appendChild(book);
     }    
 }
