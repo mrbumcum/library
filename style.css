@@ -215,8 +215,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
 }
 
-.book {
+@media (max-width: 995px) {
+  #bookGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 660px) {
+  #bookGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .readYes {
