@@ -188,3 +188,10 @@
     height: 15px;
     margin  : 0.5rem;
   }
+
+#bookGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
